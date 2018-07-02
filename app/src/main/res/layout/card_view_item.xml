@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/catogaryLinearLayout"
+    android:paddingBottom="@dimen/margin_medium">
+
+    <LinearLayout
+        android:id="@+id/cartLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/catogary_Image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/catagory_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neeraj Tea Supreme"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/catagory_disc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 kg"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/catagory_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Rs. 1500"
+                android:textColor="#4CAF50"
+                android:textSize="@dimen/text_size_xmedium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/catagory_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qty:"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:prompt="@string/spinner_title" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/catagory_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="add"
+                    android:background="@drawable/loginbutton_selector"
+                    android:layout_weight="0.8" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_weight="0.6"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="add" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_width_small"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/grey_light" />
+
+</LinearLayout>
+
